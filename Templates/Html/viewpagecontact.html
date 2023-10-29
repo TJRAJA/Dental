@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head><center>
+	<title>TJ</title>
+</head>
+<body>
+	<h1 style="color:red;text-align: center;">Contact Details</h1>
+	<table border="2" style="color: blue;text-align: center;">
+		<thead>
+			<th>name</th>
+			<th>email</th>
+			<th>subject</th>
+			<th>message</th>
+		</thead>
+		{% for i in s %}
+		<tr>
+			<td>{{i.c_name}}</td>
+			<td>{{i.c_email}}</td>
+			<td>{{i.c_subject}}</td>
+			<td>{{i.c_message}}</td>			
+		</tr>
+		{% endfor %}
+	</table>
+	</center>
+</body>
+</html>

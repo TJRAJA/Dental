@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head><center>
+	<title>TJ</title>
+</head>
+<body>
+	<h1 style="color:red;text-align: center;">Patient Appointments</h1>
+	<table border="2" style="color: blue;text-align: center;">
+		<thead>
+			<th>Name</th>
+			<th>Email</th>
+			<th>Date</th>
+			<th>Time</th>
+		</thead>
+
+		{% for i in s %}
+		
+		<tr>
+			<td>{{i.p_name}}</td>
+			<td>{{i.p_email}}</td>
+			<td>{{i.p_date}}</td>
+			<td>{{i.p_time}}</td>
+			
+		</tr>
+		{% endfor %}
+	</table>
+	</center>
+</body>
+</html>
